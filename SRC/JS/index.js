@@ -66,6 +66,7 @@ function carrosselAutomatico(index) {
     
     meucarrossel = setInterval(() => {
 
+        // o setInterval se repete após determinado tempo
         desativarBotaoSelecionado()
         selecionarBotao(botoesCarrossel[proximo])
         desativarImagemAtual()
