@@ -56,7 +56,13 @@ function desativarBotaoSelecionado() {
 
 function carrosselAutomatico(index) {
     
-    let proximo = index +  1
+    let proximo = index
+
+    if (proximo < (botoesCarrossel.length - 1)){
+        proximo = proximo +  1
+    }else{
+        proximo = 0
+    }
     
     meucarrossel = setInterval(() => {
 
